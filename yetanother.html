@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spencer Gabor Portfolio Replica</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f7f7f7;
+            color: #000;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Animation container */
+        .animation-container {
+            width: 100%;
+            height: 70vh;
+            position: relative;
+            overflow: hidden;
+            background-color: #f7f7f7;
+        }
+        
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, rgba(255,255,255,0.8), rgba(240,240,240,0.9));
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transform-origin: center;
+            animation: float 15s infinite ease-in-out;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                transform: translate(5%, 5%) rotate(5deg);
+            }
+            50% {
+                transform: translate(0, 10%) rotate(0deg);
+            }
+            75% {
+                transform: translate(-5%, 5%) rotate(-5deg);
+            }
+        }
+        
+        /* Name section */
+        .name-section {
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .name-section h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin-bottom: 1rem;
+        }
+        
+        /* Project cards section */
+        .projects-section {
+            padding: 2rem 0;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .project-card {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .project-info {
+            padding: 1.5rem;
+        }
+        
+        .project-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .project-info p {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+            margin-top: 12px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="animation-container" id="animation">
+        <!-- Shapes will be added here via JavaScript -->
+    </div>
+    
+    <div class="container">
+        <div class="name-section">
+            <h1>Spencer Gabor</h1>
+        </div>
+        
+        <div class="projects-section">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="/api/placeholder/400/320" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Digital Product Design</h3>
+                        <p>Designing interfaces and experiences for digital products</p>
+                        <span class="tag">UI Design</span>
+                        <span class="tag">UX</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="/api/placeholder/400/320" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Motion Design</h3>
+                        <p>Creating engaging animations and motion graphics</p>
+                        <span class="tag">Animation</span>
+                        <span class="tag">After Effects</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="/api/placeholder/400/320" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Brand Identity</h3>
+                        <p>Designing cohesive visual identities for brands</p>
+                        <span class="tag">Branding</span>
+                        <span class="tag">Logo Design</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <img src="/api/placeholder/400/320" alt="Project 4">
+                    <div class="project-info">
+                        <h3>Web Development</h3>
+                        <p>Building responsive and interactive web experiences</p>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Create the animated shapes
+        const animationContainer = document.getElementById('animation');
+        const numShapes = 5; // Number of shapes to create
+        
+        // Create shapes with different sizes and positions
+        for (let i = 0; i < numShapes; i++) {
+            const shape = document.createElement('div');
+            shape.className = 'shape';
+            
+            // Random size between 150px to 400px
+            const size = Math.floor(Math.random() * 250) + 150;
+            shape.style.width = `${size}px`;
+            shape.style.height = `${size}px`;
+            
+            // Random position
+            const posX = Math.floor(Math.random() * 80); // % of container width
+            const posY = Math.floor(Math.random() * 80); // % of container height
+            shape.style.left = `${posX}%`;
+            shape.style.top = `${posY}%`;
+            
+            // Random animation delay
+            const delay = Math.random() * 5;
+            shape.style.animationDelay = `${delay}s`;
+            
+            // Random animation duration between 10-20s
+            const duration = Math.random() * 10 + 10;
+            shape.style.animationDuration = `${duration}s`;
+            
+            // Random opacity
+            const opacity = Math.random() * 0.5 + 0.3;
+            shape.style.opacity = opacity;
+            
+            // Add to container
+            animationContainer.appendChild(shape);
+        }
+        
+        // Create additional smaller shapes for more complexity
+        for (let i = 0; i < 8; i++) {
+            const smallShape = document.createElement('div');
+            smallShape.className = 'shape';
+            
+            // Smaller size
+            const size = Math.floor(Math.random() * 100) + 50;
+            smallShape.style.width = `${size}px`;
+            smallShape.style.height = `${size}px`;
+            
+            // Random position
+            const posX = Math.floor(Math.random() * 90);
+            const posY = Math.floor(Math.random() * 90);
+            smallShape.style.left = `${posX}%`;
+            smallShape.style.top = `${posY}%`;
+            
+            // Random animation delay
+            const delay = Math.random() * 10;
+            smallShape.style.animationDelay = `${delay}s`;
+            
+            // Random animation duration
+            const duration = Math.random() * 15 + 15;
+            smallShape.style.animationDuration = `${duration}s`;
+            
+            // Higher opacity for smaller shapes
+            const opacity = Math.random() * 0.3 + 0.1;
+            smallShape.style.opacity = opacity;
+            
+            // Add to container
+            animationContainer.appendChild(smallShape);
+        }
+    </script>
+</body>
+</html>
