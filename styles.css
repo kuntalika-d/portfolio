@@ -5,19 +5,9 @@ body {
   color: #111;
     overflow-x: hidden;
   }
-  
-  /*.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-  }*/
 
   .hero {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
