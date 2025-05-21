@@ -119,13 +119,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Resume Download
   document.getElementById('resumeBtn')?.addEventListener('click', function () {
-    /*const link = document.createElement('a');
+    const link = document.createElement('a');
     link.href = 'kd_resume.docx';
     link.download = 'kd_resume.docx';
     document.body.appendChild(link);
     link.click();
-    document.body.removeChild(link);*/
-     window.open('kd_resume.pdf', '_blank');
+    document.body.removeChild(link);
   });
 
   // Work Section
@@ -190,37 +189,3 @@ document.addEventListener('DOMContentLoaded', () => {
   updateToggleSymbols();
 
 });
-
-function validateFooterForm() {
-  const name = document.getElementById("footer-name").value.trim();
-  const email = document.getElementById("footer-email").value.trim();
-  const nameErr = document.getElementById("footer-name-error");
-  const emailErr = document.getElementById("footer-email-error");
-
-  nameErr.textContent = "";
-  emailErr.textContent = "";
-
-  let isValid = true;
-
-  if (name === "") {
-    nameErr.textContent = "Name is required.";
-    isValid = false;
-  }
-
-  if (email === "" || !email.includes("@") || !email.includes(".")) {
-    emailErr.textContent = "Valid email required.";
-    isValid = false;
-  }
-
-  if (isValid) {
-    alert("Thank you! Your message has been sent.");
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function resetFooterErrors() {
-  document.getElementById("footer-name-error").textContent = "";
-  document.getElementById("footer-email-error").textContent = "";
-}

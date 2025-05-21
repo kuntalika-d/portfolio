@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kuntalika Debnath Project</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
   <!-- GSAP CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
   <nav >
-    <button id="menu-toggle">☰ Menu</button>
+    <button id="menu-toggle">☰</button>
     <ul id="menu" class="hidden">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -18,41 +20,215 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <img src="logo.jpg" alt="Logo" class="logo" />
+  <a href="#home" class="skip-link">
+    <img src="LOGO.png" alt="Logo" class="logo"/>
+  </a>
   <section id="home" class="hero">
+    <section class="card-stack">
+      <div class="stack-card">
+        <img src="real_diva_small.jpg" alt="The Diva in Me" class="card-image" />
+      </div>
+      <div class="stack-card">
+        <img src="creative.jpg" alt="The Diva in Me" class="card-image" />
+      </div>
+      <div class="stack-card">
+        <img src="pets and plants.jpg" alt="The Diva in Me" class="card-image" />
+      </div>
+    </section>
+    <br><br><br><br><br>
     <h1 class="hero-title">Kuntalika Debnath</h1>
     <p class="hero-subtitle">UI/UX Researcher and Designer</p>
-  
-    <section class="card-stack">
-      <div class="stack-card" style="width: 200px; height: 200px; background: #ccc; border-radius: 30px;">
-        <img src="diva.jpg" alt="The Diva in Me" class="card-image" />
-      </div>
-      <div class="stack-card" style="width: 200px; height: 200px; background: #ccc; border-radius: 30px;"></div>
-      <div class="stack-card" style="width: 200px; height: 200px; background: #ccc; border-radius: 30px;"></div>
-    </section>
-    
   </section>
 
-  <section id="about" class="hero">
-    <h1>About</h1>
-    <div class="about-container">
-      <div class="about-section">
-        <p>Design Philosphy: Research, empathy, inclusitivity and storytelling.</p>
+  <section id="about" class="container">
+    <h1 class="about-h1">About</h1>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <span class="label">Design Philosophy:<br><br></span>
+          <div style="padding-left: 100px;">
+            <span style="font-size: 64px;">
+              <strong>Research,empathy</strong><br>
+                <strong>Inclusitivity and</strong><br>
+                <strong>Storytelling</strong>
+              </span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <span class="label">Core strength:<br><br></span>
+          <div style="padding-left: 100px;">
+            <span style="font-size: 64px;">
+              <strong>Research,analysis</strong><br>
+               <strong>problem solving and</strong><br>
+               <strong>Ideation</strong>
+             </span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <span class="label">Personality fun facts:<br><br></span>
+          <div style="padding-left: 100px;">
+            <span style="font-size: 64px;">
+              <strong>Quirky,extrovert</strong><br>
+               <strong>and workaholic</strong><br>
+             </span>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <span class="label">What I am looking for?<br><br></span>
+          <div style="padding-left: 100px;">
+            <span style="font-size: 64px;">
+              <strong>Intership role</strong><br>
+               <strong>for UXR / UXD</strong><br>
+             </span>
+          </div>
+        </div>
       </div>
-      <div class="about-section">
-        <p>Core strength: Research, Analysis and problem solving.</p>
+      <br><br>
+        <!-- Pagination (the "kebab" dots) -->
+      <div class="swiper-pagination"></div>
+     </div>
+     <div class="resume-button-wrapper">
+      <button id="resumeBtn" class="custom-button">Resume</button>
+    </div>
+    
+  </section>
+  <section class="stack-section">
+    <h2 class="stack-title">My Stack</h2>
+    <div class="stack-container">
+      <div class="my-stack">
+        <img src="css.png" alt="Stack 1" class="card-image" />
       </div>
-      <div class="about-section">
-        <p>Personality fun facts: Quirky, extrovert and workaholic.</p>
+      <div class="my-stack">
+        <img src="Figma_mystack.png" alt="Stack 2" class="card-image" />
       </div>
-      <div class="about-section">
-        <p>What I am looking for? Intership role for UXR / UXD.</p>
+      <div class="my-stack">
+        <img src="ChatGPT.png" alt="Stack 3" class="card-image" />
+      </div>
+      <div class="my-stack">
+        <img src="HTML_mystck.png" alt="Stack 4" class="card-image" />
+      </div>
+      <div class="my-stack">
+        <img src="Illustrator_mystack.png" alt="Stack 5" class="card-image" />
+      </div>
+      <div class="my-stack">
+        <img src="Miro.png" alt="Stack 6" class="card-image" />
+      </div>
+      <div class="my-stack">
+        <img src="Webflow_mystack.png" alt="Stack 6" class="card-image" />
+      </div>
+      <div class="my-stack">
+        <img src="Photoshop_mystack.png" alt="Stack 6" class="card-image" />
       </div>
     </div>
   </section>
-  <section id="work" class="hero">Work</section>
-  <section id="contact" class="hero">Contact</section>
+  <section id="work" class="work-container"> 
+    <h1 class="about-h1">Work</h1>
+    <div class="cards-container">
+      <div class="cards-wrapper" id="cardsWrapper">
+      <!-- Card 1 -->
+      <div class="card" data-index="0">
+          <div class="card-image">
+              <img src="card01.jpg" alt="Project 1">
+          </div>
+          <h3 class="card-title">Project Name 1</h3>
+          <!--<p class="card-preview">Tart cake cotton candy candy cookie jujubes croissant candy muffin. Cookie pie liquorice tootsie roll wafer bear claw candy canes cake apple pie. Tiramisu croissant carrot cake toffee ice cream.</p>-->
+          
+          <div class="card-content">
+              <div class="card-full-text">
+                  <p>Toffee muffin chocolate lollipop gummies pie pudding. Ice cream chocolate bar sweet macaroon jelly beans cake soufflé chocolate cake. Marzipan croissant croissant sweet icing chocolate gummies caramels chocolate cake. Danish lemon drops sweet roll cheesecake dragée chupa chups fruitcake brownie powder.</p>
+                  <p>Sesame snaps bear claw topping sweet roll icing muffin soufflé lemon drops. Dragée tootsie roll marzipan chocolate bar topping powder tiramisu fruitcake jujubes. Jelly beans pudding tootsie roll caramels liquorice tootsie roll halvah.</p>
+              </div>
+              <div class="card-actions">
+                  <a href="#" class="btn">Learn more</a>
+              </div>
+          </div>
+          
+          <div class="toggle-indicator">+</div>
+          <div class="close-btn"></div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="card" data-index="1">
+          <div class="card-image">
+              <img src="card02.jpg" alt="Project 2">
+          </div>
+          <h3 class="card-title">Project Name 2</h3>
+          <!--<p class="card-preview">Tart cake cotton candy candy cookie jujubes croissant candy muffin. Cookie pie liquorice tootsie roll wafer bear claw candy canes cake apple pie. Tiramisu croissant carrot cake toffee ice cream.</p>-->
+          
+          <div class="card-content">
+              <div class="card-full-text">
+                  <p>Toffee muffin chocolate lollipop gummies pie pudding. Ice cream chocolate bar sweet macaroon jelly beans cake soufflé chocolate cake. Marzipan croissant croissant sweet icing chocolate gummies caramels chocolate cake. Danish lemon drops sweet roll cheesecake dragée chupa chups fruitcake brownie powder.</p>
+                  <p>Sesame snaps bear claw topping sweet roll icing muffin soufflé lemon drops. Dragée tootsie roll marzipan chocolate bar topping powder tiramisu fruitcake jujubes. Jelly beans pudding tootsie roll caramels liquorice tootsie roll halvah.</p>
+              </div>
+              <div class="card-actions">
+                  <a href="#" class="btn">Learn more</a>
+              </div>
+          </div>
+          
+          <div class="toggle-indicator">+</div>
+          <div class="close-btn"></div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="card" data-index="2">
+          <div class="card-image">
+              <img src="card03.jpg" alt="Project 3">
+          </div>
+          <h3 class="card-title">Project Name 3</h3>
+          <!--<p class="card-preview">Tart cake cotton candy candy cookie jujubes croissant candy muffin. Cookie pie liquorice tootsie roll wafer bear claw candy canes cake apple pie. Tiramisu croissant carrot cake toffee ice cream.</p>-->
+          
+          <div class="card-content">
+              <div class="card-full-text">
+                  <p>Toffee muffin chocolate lollipop gummies pie pudding. Ice cream chocolate bar sweet macaroon jelly beans cake soufflé chocolate cake. Marzipan croissant croissant sweet icing chocolate gummies caramels chocolate cake. Danish lemon drops sweet roll cheesecake dragée chupa chups fruitcake brownie powder.</p>
+                  <p>Sesame snaps bear claw topping sweet roll icing muffin soufflé lemon drops. Dragée tootsie roll marzipan chocolate bar topping powder tiramisu fruitcake jujubes. Jelly beans pudding tootsie roll caramels liquorice tootsie roll halvah.</p>
+              </div>
+              <div class="card-actions">
+                  <a href="#" class="btn">Learn more</a>
+              </div>
+          </div>
+          
+          <div class="toggle-indicator">+</div>
+          <div class="close-btn"></div>
+      </div>
+    </div>
+    </div>
+  </div>
+  </section>
+  <section id="contact" class="footer-section">
+  <footer class="footer">
+  <div class="footer-container">
+    <h1 class="about-h1">Contact</h1>
 
+    <form class="footer-form" name="FooterForm" onsubmit="return validateFooterForm()" onreset="resetFooterErrors()">
+      <input type="text" id="footer-name" name="Name" placeholder="Your Name*" />
+      <span id="footer-name-error" class="error-message"></span>
+
+      <input type="email" id="footer-email" name="Email" placeholder="Your Email*" />
+      <span id="footer-email-error" class="error-message"></span>
+
+      <textarea id="footer-message" name="Message" rows="3" placeholder="Your Message"></textarea>
+
+      <input type="submit" value="Send" sty/>
+      <input type="reset" value="Reset" class="custom-button"/>
+    </form>
+    <div class="footer-info">
+      <section class="stack-container">
+        <div class="my-stack">
+          <img src="git 45.png" alt="Github" class="github-icon" />
+        </div>
+        <div class="my-stack">
+          <img src="Instagram Old.png" alt="Instagram" class="card-image" />
+        </div>
+        <div class="my-stack">
+          <img src="LinkedIn.png" alt="LinkedIn" class="card-image" />
+        </div>  
+      </section>
+      <p style="font-size: 12px;">&copy; 2025 Kuntalika Debnath. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</section>
   <script src="script.js"></script>
 </body>
 </html>
