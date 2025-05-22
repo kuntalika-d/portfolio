@@ -221,7 +221,7 @@ h2 {
 }
 
 .container{
-  padding-top: 80px;    /* Adjust as needed */
+  padding-top: 70px;    /* Adjust as needed */
   padding-bottom: 80px;  /* Reduced to bring next section closer */
   padding-left: 250px;
   padding-right: 250px;
@@ -626,40 +626,6 @@ h2 {
   font-weight: bold;
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-}
-
-.contact-form textarea {
-  height: 120px;
-  resize: vertical;
-}
-
-.contact-form button {
-  padding: 12px;
-  font-size: 16px;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background-color: #333;
-}
-
 
 /* Footer */
 .footer {
@@ -689,7 +655,7 @@ h2 {
 }
 
 .footer-form {
-  background-color: #fbf5df;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;
   max-width: 500px;
