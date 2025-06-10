@@ -245,6 +245,16 @@ h2 {
   text-align: center;
 }
 
+.my-stack-section {
+  background-color: #FBB81F; /* light yellow */
+  left: 1rem;
+  z-index: 1000;
+  padding: 30px 15px;
+  text-align: center;
+  height: 200px; /* Adjusted height for better visibility */
+  margin-top: 30px;
+}
+
 .stack-title {
   font-size: 20px;
   margin-bottom: 20px;
