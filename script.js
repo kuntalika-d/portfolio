@@ -119,13 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Resume Download
   document.getElementById('resumeBtn')?.addEventListener('click', function () {
-    /*const link = document.createElement('a');
-    link.href = 'kd_resume.docx';
-    link.download = 'kd_resume.docx';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);*/
-     window.open('kd_resume.pdf', '_blank');
+    window.open('resources/docs/kd_resume.pdf', '_blank');
   });
 
   // Work Section

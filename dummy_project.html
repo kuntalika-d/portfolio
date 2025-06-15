@@ -4,13 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kuntalika Debnath Project</title>
+  <!--styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="styles.css"/>
-  <!-- GSAP CDN -->
+  <!-- scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
+  <!-- Navigation Bar -->
   <nav >
     <button id="menu-toggle">☰</button>
     <ul id="menu" class="hidden">
@@ -21,18 +25,19 @@
     </ul>
   </nav>
   <a href="#home" class="skip-link">
-    <img src="LOGO.png" alt="Logo" class="logo"/>
+    <img src="resources/images/LOGO.png" alt="Logo" class="logo"/>
   </a>
+  <!-- Top Section -->
   <section id="home" class="hero">
     <section class="card-stack">
       <div class="stack-card">
-        <img src="real_diva_small.jpg" alt="The Diva in Me" class="card-image" />
+        <img src="resources/images/real_diva_small.jpg" alt="The Diva in Me" class="card-image" />
       </div>
       <div class="stack-card">
-        <img src="creative.jpg" alt="The Diva in Me" class="card-image" />
+        <img src="resources/images/creative.jpg" alt="The Diva in Me" class="card-image" />
       </div>
       <div class="stack-card">
-        <img src="pets and plants.jpg" alt="The Diva in Me" class="card-image" />
+        <img src="resources/images/pets and plants.jpg" alt="The Diva in Me" class="card-image" />
       </div>
     </section>
     <br><br><br><br><br>
@@ -40,9 +45,11 @@
     <p class="hero-subtitle">UI/UX Researcher and Designer</p>
   </section>
 
+  <!-- About Section -->
   <section id="about" class="container">
     <h1 class="about-h1">About</h1>
 
+    <!-- Swiper Slider for About Section -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -90,35 +97,35 @@
      </div>
      <div class="resume-button-wrapper">
       <button id="resumeBtn" class="custom-button">Resume</button>
-    </div>
-    
+    </div>    
   </section>
+  <!-- My Stack Section -->
   <section class="my-stack-section">
     <h1 class="stack-title">My Stack</h1>
     <div class="stack-container">
       <div class="my-stack">
-        <img src="css.png" alt="Stack 1" class="card-image" />
+        <img src="resources/images/css.png" alt="Stack 1" class="card-image" />
       </div>
       <div class="my-stack">
-        <img src="Figma_mystack.png" alt="Stack 2" class="card-image" />
+        <img src="resources/images/Figma_mystack.png" alt="Stack 2" class="card-image" />
       </div>
       <div class="my-stack">
-        <img src="ChatGPT.png" alt="Stack 3" class="card-image" />
+        <img src="resources/images/ChatGPT.png" alt="Stack 3" class="card-image" />
       </div>
       <div class="my-stack">
-        <img src="HTML_mystck.png" alt="Stack 4" class="card-image" />
+        <img src="resources/images/HTML_mystck.png" alt="Stack 4" class="card-image" />
       </div>
       <div class="my-stack">
-        <img src="Illustrator_mystack.png" alt="Stack 5" class="card-image" />
+        <img src="resources/images/Illustrator_mystack.png" alt="Stack 5" class="card-image" />
       </div>
       <div class="my-stack">
-        <img src="Miro.png" alt="Stack 6" class="card-image" />
+        <img src="resources/images/Miro.png" alt="Stack 6" class="card-image" />
       </div>
       <div class="my-stack">
-        <img src="Webflow_mystack.png" alt="Stack 6" class="card-image" />
+        <img src="resources/images/Webflow_mystack.png" alt="Stack 6" class="card-image" />
       </div>
       <div class="my-stack">
-        <img src="Photoshop_mystack.png" alt="Stack 6" class="card-image" />
+        <img src="resources/images/Photoshop_mystack.png" alt="Stack 6" class="card-image" />
       </div>
     </div>
   </section>
@@ -129,11 +136,9 @@
       <!-- Card 1 -->
       <div class="card" data-index="0">
           <div class="card-image">
-              <img src="card01.jpg" alt="Project 1">
+              <img src="resources/images/card01.jpg" alt="Project 1">
           </div>
           <h3 class="card-title">Digi Pawket</h3>
-          <!--<p class="card-preview">Tart cake cotton candy candy cookie jujubes croissant candy muffin. Cookie pie liquorice tootsie roll wafer bear claw candy canes cake apple pie. Tiramisu croissant carrot cake toffee ice cream.</p>-->
-          
           <div class="card-content">
               <div class="card-full-text">
                   <p>Toffee muffin chocolate lollipop gummies pie pudding. Ice cream chocolate bar sweet macaroon jelly beans cake soufflé chocolate cake. Marzipan croissant croissant sweet icing chocolate gummies caramels chocolate cake. Danish lemon drops sweet roll cheesecake dragée chupa chups fruitcake brownie powder.</p>
@@ -151,11 +156,9 @@
       <!-- Card 2 -->
       <div class="card" data-index="1">
           <div class="card-image">
-              <img src="card02.jpg" alt="Project 2">
+              <img src="resources/images/card02.jpg" alt="Project 2">
           </div>
           <h3 class="card-title">Asha Didi.AI</h3>
-          <!--<p class="card-preview">Tart cake cotton candy candy cookie jujubes croissant candy muffin. Cookie pie liquorice tootsie roll wafer bear claw candy canes cake apple pie. Tiramisu croissant carrot cake toffee ice cream.</p>-->
-          
           <div class="card-content">
               <div class="card-full-text">
                   <p>Toffee muffin chocolate lollipop gummies pie pudding. Ice cream chocolate bar sweet macaroon jelly beans cake soufflé chocolate cake. Marzipan croissant croissant sweet icing chocolate gummies caramels chocolate cake. Danish lemon drops sweet roll cheesecake dragée chupa chups fruitcake brownie powder.</p>
@@ -173,11 +176,9 @@
       <!-- Card 3 -->
       <div class="card" data-index="2">
           <div class="card-image">
-              <img src="card03.jpg" alt="Project 3">
+              <img src="resources/images/card03.jpg" alt="Project 3">
           </div>
           <h3 class="card-title">The Design Loom</h3>
-          <!--<p class="card-preview">Tart cake cotton candy candy cookie jujubes croissant candy muffin. Cookie pie liquorice tootsie roll wafer bear claw candy canes cake apple pie. Tiramisu croissant carrot cake toffee ice cream.</p>-->
-          
           <div class="card-content">
               <div class="card-full-text">
                   <p>Toffee muffin chocolate lollipop gummies pie pudding. Ice cream chocolate bar sweet macaroon jelly beans cake soufflé chocolate cake. Marzipan croissant croissant sweet icing chocolate gummies caramels chocolate cake. Danish lemon drops sweet roll cheesecake dragée chupa chups fruitcake brownie powder.</p>
@@ -195,6 +196,7 @@
     </div>
   </div>
   </section>
+  <!-- Contact Section -->
   <section id="contact" class="container">
   <footer class="footer">
   <div class="footer-container">
@@ -215,28 +217,28 @@
   </div>
 </footer>
 </section>
- <section class="stack-section">
+<!-- Footer Section -->
+ <section class="footer-stack-section">
   <div class="footer-info">
       <section class="stack-container">
         <div class="my-stack">
           <a href="https://www.behance.net/kuntalidebnath" class="skip-link">
-            <img src="Behance.png" alt="Github" class="card-image" />
+            <img src="resources/images/Behance.png" alt="Github" class="card-image" />
           </a>
         </div>
         <div class="my-stack">
           <a href="https://www.instagram.com/kuntalikalovestodraw/?hl=en" class="skip-link">
-            <img src="Instagram Old.png" alt="Instagram" class="card-image" />
+            <img src="resources/images/Instagram Old.png" alt="Instagram" class="card-image" />
           </a>
         </div>
         <div class="my-stack">
           <a href="https://www.linkedin.com/in/kuntalika-debnath-23913863/" class="skip-link">
-            <img src="LinkedIn.png" alt="LinkedIn" class="card-image" />
+            <img src="resources/images/LinkedIn.png" alt="LinkedIn" class="card-image" />
           </a>
         </div>  
       </section>
       <p style="font-size: 12px;">&copy; 2025 Kuntalika Debnath. All rights reserved.</p>
     </div>
  </section>
-  <script src="script.js"></script>
 </body>
 </html>
