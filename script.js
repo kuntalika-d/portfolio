@@ -119,7 +119,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Resume Download
   document.getElementById('resumeBtn')?.addEventListener('click', function () {
-    window.open('resources/docs/kd_resume.pdf', '_blank');
+    window.open('resources/docs/kuntalika_resume.pdf', '_blank');
+  });
+
+  // swapify case study Download
+  document.getElementById('swapifyBtn')?.addEventListener('click', function () {
+    window.open('resources/docs/society_design_case_study.pdf', '_blank');
   });
 
   // Work Section
