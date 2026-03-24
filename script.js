@@ -212,7 +212,7 @@ function validateFooterForm() {
   }
 
   if (isValid) {
-    alert("Thank you! Your message has been sent.");
+    alert("Thank you for trying out! Email integration coming soon.");
     return true;
   } else {
     return false;

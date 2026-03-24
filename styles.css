@@ -326,7 +326,7 @@ h2 {
 .work-container {
   position: relative;
   height: auto; /* or 100vh, or whatever makes sense */
-  padding-top: 150px;    /* Adjust as needed */
+  padding-top: 50px;    /* Reduced to eliminate gap from hidden My Stack section */
   padding-bottom: 80px;  /* Reduced to bring next section closer */
   overflow: hidden;
 }
